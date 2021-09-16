@@ -1,0 +1,156 @@
+body{
+  background-color: #f4f4f4;
+  color:#555;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+  font-family: Arial ,Helvetica ,sans-serif;
+
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header{
+  background-color: #000;
+  color:#fff;
+  min-height: 70px;
+  padding-top :30px;
+  border-bottom: coral 3px solid;
+}
+
+nav{
+  color: #fff;
+  float: right;
+  margin-top: 25px;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+nav a:hover{
+  color: coral;
+}
+
+header #branding{
+  float:left;
+}
+
+.highlight{
+  color:coral;
+}
+
+#main-block{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.main-wall {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.wall-card{
+  padding: 5px;
+}
+
+.wall-card img{
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.wall-card h2{
+  margin: 10px auto;
+}
+
+.wall-card img:hover{
+  position: relative;
+  top :-4px;
+}
+.wall-card:hover{
+  color :coral;
+}
+
+
+/*side bar */
+#side-bar{
+  position: fixed;
+  bottom:90px;
+  left:15px;
+}
+
+#side-bar ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#side-bar li{
+  padding: 15px 0;
+}
+
+#side-bar img{
+  width :32px;
+  height: 32px;
+}
+
+
+footer{
+  background-color: lightgray;
+  text-align: center;
+  font-size: 18px;
+  padding:20px;
+  margin-top: 40px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .main-wall {
+    flex: 50%;
+    max-width: 50%;
+  }
+  header #branding ,
+  header nav,
+  header nav li{
+    float:none;
+    text-align: center;
+  }
+
+  header nav{
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .main-wall {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  header nav li{
+    padding: 0 5px 0 5px;
+  }
+}
